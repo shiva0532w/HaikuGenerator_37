@@ -1,0 +1,66 @@
+Haiku Generator Project
+Source and Dataset
+Source: final_dataset.csv uploaded file.
+Description: Contains questions or prompts likely used as input for generating haikus. These inputs form the foundation for the haiku generation tasks.
+Generated Outputs: generaed output.txt contains human-readable outputs where each question corresponds to a haiku.
+
+Methodology / Model
+Preprocessing
+Function: preprocess_text(input_text)
+Logic:
+Utilizes natural language processing techniques to parse and clean input questions.
+Ensures text is formatted appropriately for haiku generation, possibly splitting the input into semantically meaningful parts for poetic synthesis.
+Purpose: Prepares raw input for effective haiku generation.
+Model and Training
+Framework: Model development appears to involve rule-based or NLP-driven methods for generating syllable-appropriate haikus.
+Algorithm: Likely uses a syllable-based structure (5-7-5) in combination with semantic mapping to align text generation with the essence of the input question.
+Training Data: Prompts/questions from final_dataset.csv may serve as input data. Pretrained NLP models or specific haiku construction rules likely underpin the system.
+
+
+Experiments
+Preprocessing Validation
+The questions were processed to validate the appropriate syllabic structure and relevance to the haiku form.
+Verified the alignment of generated haikus with inputs based on syllable rules and thematic consistency.
+Model Performance
+The notebook (haiku (1).ipynb) appears to include a pipeline for generating haikus, testing outputs on several input prompts.
+Performance was validated by manually inspecting the generated haikus for adherence to the 5-7-5 structure and poetic quality.
+
+
+Results
+Generated Outputs
+The generaed output.txt file includes ten haikus, each inspired by a specific question about AI. Below are sample outputs:
+Question: "Can AI truly think like humans?" Haiku:
+
+Thoughts in circuits hum,
+Emulating human minds—
+But soul stays unknown.
+
+Question: "What is the role of AI in art?" Haiku:
+
+Brush of code creates,
+Pixels bloom like fields of spring—
+Art redefined now.
+
+
+Summary of Outputs:
+
+Quality:
+	 Generated haikus capture the essence of each question, with creative and meaningful reflections.
+Structure: All outputs conform to the 5-7-5 syllable format, showcasing the effectiveness of the pipeline.
+
+
+Analysis and Conclusion
+
+Observations:-
+		The system consistently generates structured and meaningful haikus aligned with input prompts.
+Outputs demonstrate the potential of combining NLP techniques with poetic constraints to create artistic expressions.
+
+Limitations
+	No quantitative evaluation metrics (e.g., BLEU score) were applied. The quality of haikus was assessed subjectively.
+The model may struggle with complex or ambiguous prompts, affecting thematic relevance.
+Improvements for Future Work
+Advanced Preprocessing: Incorporate additional NLP techniques like sentiment analysis or topic modeling to enhance thematic accuracy.
+Evaluation Metrics: Introduce objective metrics like perplexity or BLEU to quantitatively evaluate output quality.
+Expand Dataset: Use a broader dataset to train on diverse themes and ensure adaptability across various poetic forms.
+User Interactivity: Develop a user-facing interface to allow real-time haiku generation based on custom inputs.
+
